@@ -5,7 +5,7 @@
     <title>Eddie the Lizard</title>
   </head>
   <body>
-    <div id='product-component-d2c03ba4131'></div>
+    <div id='product-component-e0e8e6ad309'></div>
     <script type="text/javascript">
     /*<![CDATA[*/
     
@@ -39,20 +39,19 @@
         ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
             id: [10444038162],
-            node: document.getElementById('product-component-d2c03ba4131'),
+            node: document.getElementById('product-component-e0e8e6ad309'),
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: {
       "product": {
         "buttonDestination": "checkout",
+        "layout": "horizontal",
         "variantId": "all",
-        "width": "240px",
+        "width": "100%",
         "contents": {
           "img": false,
-          "imgWithCarousel": false,
-          "title": false,
+          "imgWithCarousel": true,
           "variantTitle": false,
-          "price": false,
-          "description": false,
+          "description": true,
           "buttonWithQuantity": false,
           "quantity": false
         },
@@ -61,6 +60,7 @@
         },
         "styles": {
           "product": {
+            "text-align": "left",
             "@media (min-width: 601px)": {
               "max-width": "100%",
               "margin-left": "0",
@@ -76,7 +76,8 @@
             "font-weight": "normal"
           },
           "title": {
-            "font-family": "Montserrat, sans-serif"
+            "font-family": "Montserrat, sans-serif",
+            "font-size": "26px"
           },
           "description": {
             "font-family": "Montserrat, sans-serif",
@@ -84,10 +85,11 @@
           },
           "price": {
             "font-family": "Montserrat, sans-serif",
+            "font-size": "18px",
             "font-weight": "normal"
           },
           "compareAt": {
-            "font-size": "12px",
+            "font-size": "15px",
             "font-family": "Montserrat, sans-serif",
             "font-weight": "normal"
           }
